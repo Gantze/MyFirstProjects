@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6{
+    font-family: playfair-display, sans-serif;
+    font-size: 15px;
+}
+
+p{
+    margin: 15px 0;
+}
+
+h3{
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h5{
+    line-height: 27px;
+    font-size: 18px;
+}
+
+h5 span{
+    color: silver;
+}
+
+h3, h4, h5{
+    margin: 10px 0;
+}
+
+body{
+    background-color: #F5F5F5;
+    line-height: 22.5px;
+}
+
+hr{
+    margin: 20px 0;
+    border: 1px solid #F5F5F5;
+}
+
+#container{
+    width: 100%; 
+}
+
+header{
+    text-align: center;
+    padding: 32px 16px;
+}
+
+h1{
+    font-size: 40px;
+    margin: 10px;
+    line-height: 54px;
+}
+
+header p{
+    margin: 18px;
+}
+
+header .name{
+    color: white;
+    background-color: black;
+    box-sizing: content-box;
+    padding: 3px 8px;
+}
+
+#grid{
+    display: flex;
+    width: 100%;
+}
+
+#left-column{
+    width: 66.67%;
+}
+
+#right-column{
+    width: 33.33%;
+}
+
+.blog-boxes{
+    margin: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#left-column .blog-boxes{
+    box-shadow: 5px 8px 10px grey;
+}
+
+#right-column .blog-boxes{
+    box-shadow: 3px 5px 10px grey;
+}
+
+img{
+    width: 100%;
+}
+
+.titles-box, .text-box, #tags-box{
+    padding: 0 16px;
+}
+
+.button-comments-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box{
+    width: 200px;
+    height: auto;
+}
+
+.button-box p{
+    height: 45px;
+}
+
+.button-box button{
+    height: 45px;
+    width: 150px;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+.button-box button:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.comments-box p{
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+    padding: 10px 25px 10px 50px;
+}
+
+#comm-number-up, #comm-number-down{
+    background-color: black;
+    color: white;
+    padding: 6px 6px;
+}
+
+#comm-number-down{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+h4.name{
+    font-weight: bold;
+}
+
+#posts-box-title, #tags-box-title{
+    background-color: rgb(230, 230, 230);
+    padding: 8px 16px;
+}
+
+li{
+    padding: 16px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    height: 82px;
+    display: flex;
+}
+
+li:hover{
+    background-color: lightgrey;
+}
+
+li img{
+    height: 50px;
+    width: 50px;
+    margin-right: 16px;
+}
+
+li div{
+    display: flex;
+    flex-direction: column;
+}
+
+.posts-titles{
+    line-height: 27px;
+    font-size: 18px;
+}
+
+#tags-box{
+    padding: 0 16px;
+}
+
+#tags-box span{
+    background-color: rgb(230, 230, 230);
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#tags-box span#tag{
+    background-color: black;
+    color: white;
+    font-size: 15px; 
+}
+
+footer{
+    background-color: darkslategray;
+    width: 100%;
+    padding: 32px 16px; 
+    margin-top: 16px;
+}
+
+footer button{
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    line-height: 22.5px;
+    margin-bottom: 16px;
+}
+
+footer button:hover{
+    background-color: #F5F5F5;
+    color: black;
+    cursor: pointer;
+}
+
+#previous{
+    background-color: hsl(0, 0%, 0%, 0.3);
+    color: hsl(0, 0%, 100%, 0.3);
+}
+
+#previous:hover{
+    background-color: hsl(0, 0%, 71%, 0.2);
+    color: hsl(0, 0%, 15%, 0.3);
+    cursor: not-allowed;
+}
+
+footer p, a{
+    color: white;
+}
+
+@media (max-width: 950px){
+    #grid{
+        flex-direction: column;
+    }
+
+    #left-column, #right-column{
+        width: 100%;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
+
+
+
